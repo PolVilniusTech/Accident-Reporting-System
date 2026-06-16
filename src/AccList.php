@@ -738,7 +738,7 @@ $int_staff_id = (int)$staff_id;
 	
 if(isset($_POST['YES']))
 {
-	$acc_id = $_POST['acc_id'];
+	$acc_id = (int)$_POST['acc_id'];
 	
 	$insertTempqry = "INSERT INTO temp_validate
 							(accident_id, staff_id)
@@ -749,7 +749,7 @@ if(isset($_POST['YES']))
 }
 else if(isset($_POST['NO']))
 {
-	$acc_id = $_POST['acc_id'];
+	$acc_id = (int)$_POST['acc_id'];
 	
 	if(20000 < $int_staff_id && $int_staff_id < 30000)
 	{
