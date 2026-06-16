@@ -394,7 +394,7 @@
 						    mysqli_stmt_bind_param($insertthrdprepare, 'is', $accidentId, $filePath);
 						    mysqli_stmt_execute($insertthrdprepare);
 						
-							if(move_uploaded_file($_FILES['file']['tmp_name'][$i], __DIR__ . '/upload/'. $accidentId .'/'. $fileName)){
+							if(move_uploaded_file($_FILES['file']['tmp_name'][$i], __DIR__ . '/upload/'. $accidentId .'/'. $fileName_r)){
 								$success_u = true;
 							}else{
 								$success_u = false;
