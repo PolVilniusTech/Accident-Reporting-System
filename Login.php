@@ -194,7 +194,7 @@
 						$mailDriver = $_POST['mailDriver'];
 						$telDriver = $_POST['telDriver'];
 						$licenceno = $_POST['licenceno'];
-						$vehicalType = $_POST['vehicalType'];echo $fnameDriver;
+						$vehicalType = $_POST['vehicalType'];echo htmlentities($fnameDriver);
 						
 						if($fnameDriver=="" || $lnameDriver=="" || $regno=="" || $addressDriver=="" || $nicDriver=="" || $pwDriver=="" || $dobDriver=="" || $mailDriver=="" || $telDriver=="" || $licenceno=="" || $vehicalType=="" || $reppwDriver=="")
                         {
